@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo más suave */
+    color: #333; /* Texto oscuro */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    position: relative;
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Degradado moderno */
+    color: white; /* Texto blanco para contraste */
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px; /* Aumentar tamaño de logo */
+    color: #ffffff; /* Blanco */
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li {
+    position: relative;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    color: #ffffff; /* Blanco */
+    display: block;
+    transition: color 0.3s, transform 0.3s; /* Añadir animación */
+}
+
+.menu .navbar ul li a:hover {
+    color: #ffeb3b; /* Amarillo brillante */
+    transform: scale(1.1); /* Efecto de aumento */
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #ffffff; /* Fondo blanco para el carrito */
+    padding: 20px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+    width: 100%;
+}
+
+th, td {
+    color: #681f1f;
+}
+
+.borrar {
+    background-color: #ff3d00; /* Rojo brillante */
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.bg {
+    position: absolute;
+    width: 700px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-txt {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 65px;
+    color: #ffffff; /* Blanco */
+    margin-bottom: 35px;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #f0e68c; /* Amarillo suave */
+    margin-bottom: 45px;
+}
+
+.header-txt span {
+    color: #ffeb3b; /* Amarillo brillante */
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 25px;
+    background-color: #4a90e2; /* Azul moderno */
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: capitalize;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s; /* Añadir animación */
+}
+
+.btn-1:hover {
+    background-color: #357ABD; /* Azul más oscuro */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.header-img {
+    width: 50%;
+    text-align: right;
+}
+
+.header-img img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+    max-width: 650px; /* Limitar el ancho máximo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.breakfast {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 55px;
+    color: #1d1d1b;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #ff3d00; /* Rojo brillante */
+    margin-bottom: 45px;
+}
+
+.breakfast-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.breakfast-1 {
+    display: flex;
+    align-items: center;
+    background-color: #ff3d00; /* Rojo brillante */
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.2);
+}
+
+.breakfast-1 h3 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.breakfast-1 img {
+    width: 50px;
+    margin-right: 25px;
+}
+
+.info {
+    padding: 100px 0; /* Ajuste de padding */
+    position: relative;
+}
+
+.bg-2 {
+    position: absolute;
+    width: 300px;
+    z-index: -1;
+    top: 50px;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+}
+
+.info-img {
+    width: 50%;
+    text-align: left;
+}
+
+.info-img img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+    max-width: 450px; /* Limitar el ancho máximo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.info-txt {
+    width: 50%;
+}
+
+.products {
+    padding: 50px 0;
+    text-align: center; /* Ajuste de padding */
+    background-color: #ecf0f1; /* Fondo suave para la sección */
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustar tamaño mínimo */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Añadir padding alrededor de la grilla */
+}
+
+.box {
+    border-top: 2px solid #8e44ad; /* Color gourmet más elegante */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    padding: 20px; /* Aumentar padding */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadir animación */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25); /* Sombra más intensa al pasar el mouse */
+}
+
+.box img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del ancho de la caja */
+    max-width: 150px; /* Limitar el ancho máximo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.product-txt h3 {
+    font-size: 20px; /* Aumentar tamaño del título */
+    color: #2c3e50; /* Color más oscuro y elegante */
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 20px;
+    color: #7f8c8d; /* Color gris suave */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+.Precio {
+    font-weight: bold;
+    font-size: 15px;
+    color: #ff3d00; /* Rojo brillante */
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 12px 25px; /* Aumentar padding */
+    background-color: #27ae60; /* Verde gourmet */
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Añadir animación */
+}
+
+.btn-2:hover {
+    background-color: #219653; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de aumento */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+.app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0; /* Ajuste de padding */
+}
+
+.app-txt {
+    width: 50%;
+}
+
+.app-img {
+    width: 50%;
+    text-align: right;
+}
+
+.footer {
+    background-color: #2c3e50; /* Azul marino */
+    color: #ffffff;
+    padding: 40px 20px; /* Aumentar padding para más espacio */
+    text-align: center; /* Centrar texto */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: space-between; /* Espacio entre elementos */
+    margin: 0 auto; /* Centrar el contenido */
+}
+
+.footer-content .link {
+    width: 25%; /* Ajustar el ancho de los enlaces */
+    min-width: 150px; /* Ancho mínimo para enlaces */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px; /* Aumentar tamaño de fuente del título */
+}
+
+.footer-content ul {
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin-bottom: 5px;
+}
+
+.footer-content ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .header-txt {
+        width: 100%;
+        margin-right: 0;
+        text-align: center; /* Centrar texto en pantallas pequeñas */
+    }
+
+    .header-img {
+        width: 100%;
+        text-align: center; /* Centrar imagen en pantallas pequeñas */
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustar tamaño mínimo para pantallas pequeñas */
+    }
+
+    .btn-1, .btn-2 {
+        padding: 10px 20px; /* Ajustar padding de botones */
+        font-size: 14px; /* Ajustar tamaño de fuente de botones */
+    }
+
+    .header-txt h1 {
+        font-size: 40px; /* Ajustar tamaño de fuente del título */
+    }
+
+    .header-txt p {
+        font-size: 14px; /* Ajustar tamaño de fuente del párrafo */
+    }
+
+    .breakfast-content {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar contenido */
+    }
+
+    .info-content {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar contenido */
+    }
+
+    .info-img img {
+        width: 100%; /* Hacer que la imagen ocupe el 100% del ancho */
+        max-width: 450px; /* Limitar el ancho máximo */
+    }
+
+    .footer-content .link {
+        width: 100%; /* Hacer que los enlaces ocupen el 100% en pantallas pequeñas */
+        margin-bottom: 10px; /* Espacio entre filas */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-txt h1 {
+        font-size: 30px; /* Ajustar tamaño de fuente del título */
+    }
+
+    .header-txt p {
+        font-size: 12px; /* Ajustar tamaño de fuente del párrafo */
+    }
+
+    .box {
+        padding: 15px; /* Ajustar padding de las cajas */
+    }
+
+    .product-txt h3 {
+        font-size: 18px; /* Ajustar tamaño de fuente del título del producto */
+    }
+
+    .product-txt p {
+        font-size: 12px; /* Ajustar tamaño de fuente de la descripción del producto */
+    }
+}
